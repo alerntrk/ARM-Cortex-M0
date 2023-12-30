@@ -1,21 +1,230 @@
-22:50:50 **** Incremental Build of configuration Debug for project nucleo_i2c ****
+21:19:40 **** Incremental Build of configuration Debug for project U1_02 ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "nucleo_i2c.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\win10\STM32CubeIDE\workspace_1.10.1\nucleo_i2c\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="nucleo_i2c.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: nucleo_i2c.elf
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DNUCLEO_L053R8 -DSTM32 -DSTM32L0 -DSTM32L053R8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "U1_02.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\win10\Desktop\workspace2\U1_02\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U1_02.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U1_02.elf
  
-arm-none-eabi-size   nucleo_i2c.elf 
-arm-none-eabi-objdump -h -S  nucleo_i2c.elf  > "nucleo_i2c.list"
+arm-none-eabi-size   U1_02.elf 
+arm-none-eabi-objdump -h -S  U1_02.elf  > "U1_02.list"
    text	   data	    bss	    dec	    hex	filename
-  19672	     20	   1956	  21648	   5490	nucleo_i2c.elf
+   5540	    120	   1592	   7252	   1c54	U1_02.elf
 Finished building: default.size.stdout
  
-Finished building: nucleo_i2c.list
+Finished building: U1_02.list
  
-22:50:56 **** Incremental Build of configuration Debug for project nucleo_i2c ****
+21:22:50 **** Incremental Build of configuration Debug for project U1_02 ****
 make -j8 all 
-arm-none-eabi-size   nucleo_i2c.elf 
+arm-none-eabi-size   U1_02.elf 
    text	   data	    bss	    dec	    hex	filename
-  19672	     20	   1956	  21648	   5490	nucleo_i2c.elf
+   5540	    120	   1592	   7252	   1c54	U1_02.elf
+Finished building: default.size.stdout
+ 
+21:24:52 **** Incremental Build of configuration Debug for project U1_02 ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DNUCLEO_L053R8 -DSTM32 -DSTM32L0 -DSTM32L053R8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "U1_02.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\win10\Desktop\workspace2\U1_02\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U1_02.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U1_02.elf
+ 
+arm-none-eabi-size   U1_02.elf 
+arm-none-eabi-objdump -h -S  U1_02.elf  > "U1_02.list"
+   text	   data	    bss	    dec	    hex	filename
+   5540	    120	   1592	   7252	   1c54	U1_02.elf
+Finished building: default.size.stdout
+ 
+Finished building: U1_02.list
+ 
+21:26:59 **** Incremental Build of configuration Debug for project U1_02 ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DNUCLEO_L053R8 -DSTM32 -DSTM32L0 -DSTM32L053R8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "U1_02.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\win10\Desktop\workspace2\U1_02\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U1_02.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U1_02.elf
+ 
+arm-none-eabi-size   U1_02.elf 
+arm-none-eabi-objdump -h -S  U1_02.elf  > "U1_02.list"
+   text	   data	    bss	    dec	    hex	filename
+   5524	    120	   1592	   7236	   1c44	U1_02.elf
+Finished building: default.size.stdout
+ 
+Finished building: U1_02.list
+ 
+21:28:46 **** Incremental Build of configuration Debug for project U1_02 ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DNUCLEO_L053R8 -DSTM32 -DSTM32L0 -DSTM32L053R8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "U1_02.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\win10\Desktop\workspace2\U1_02\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U1_02.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U1_02.elf
+ 
+arm-none-eabi-size   U1_02.elf 
+arm-none-eabi-objdump -h -S  U1_02.elf  > "U1_02.list"
+   text	   data	    bss	    dec	    hex	filename
+   5540	    120	   1592	   7252	   1c54	U1_02.elf
+Finished building: default.size.stdout
+ 
+Finished building: U1_02.list
+ 
+17:07:50 **** Build of configuration Debug for project U1_03 ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m0plus -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32l053r8tx.d" -MT"Startup/startup_stm32l053r8tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32l053r8tx.o" "../Startup/startup_stm32l053r8tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DNUCLEO_L053R8 -DSTM32 -DSTM32L0 -DSTM32L053R8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DNUCLEO_L053R8 -DSTM32 -DSTM32L0 -DSTM32L053R8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DNUCLEO_L053R8 -DSTM32 -DSTM32L0 -DSTM32L053R8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "U1_03.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\win10\Desktop\workspace2\U1_03\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U1_03.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U1_03.elf
+ 
+arm-none-eabi-size   U1_03.elf 
+arm-none-eabi-objdump -h -S  U1_03.elf  > "U1_03.list"
+   text	   data	    bss	    dec	    hex	filename
+    452	      8	   1568	   2028	    7ec	U1_03.elf
+Finished building: default.size.stdout
+ 
+Finished building: U1_03.list
+ 
+17:08:35 **** Incremental Build of configuration Debug for project U1_03 ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DNUCLEO_L053R8 -DSTM32 -DSTM32L0 -DSTM32L053R8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'USART1_IRQHandler':
+../Src/main.c:45:21: error: 'TIM2_IRQ' undeclared (first use in this function)
+   45 |  *pISPR |= (0x01 << TIM2_IRQ );
+      |                     ^~~~~~~~
+../Src/main.c:45:21: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+17:08:48 **** Incremental Build of configuration Debug for project U1_03 ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DNUCLEO_L053R8 -DSTM32 -DSTM32L0 -DSTM32L053R8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "U1_03.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\win10\Desktop\workspace2\U1_03\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U1_03.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U1_03.elf
+ 
+arm-none-eabi-size   U1_03.elf 
+arm-none-eabi-objdump -h -S  U1_03.elf  > "U1_03.list"
+   text	   data	    bss	    dec	    hex	filename
+   5448	    120	   1592	   7160	   1bf8	U1_03.elf
+Finished building: default.size.stdout
+ 
+Finished building: U1_03.list
+ 
+17:12:43 **** Incremental Build of configuration Debug for project U1_03 ****
+make -j8 all 
+arm-none-eabi-size   U1_03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5448	    120	   1592	   7160	   1bf8	U1_03.elf
+Finished building: default.size.stdout
+ 
+17:16:46 **** Incremental Build of configuration Debug for project U1_03 ****
+make -j8 all 
+arm-none-eabi-size   U1_03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5448	    120	   1592	   7160	   1bf8	U1_03.elf
+Finished building: default.size.stdout
+ 
+17:20:14 **** Incremental Build of configuration Debug for project U1_03 ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DNUCLEO_L053R8 -DSTM32 -DSTM32L0 -DSTM32L053R8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "U1_03.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\win10\Desktop\workspace2\U1_03\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U1_03.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U1_03.elf
+ 
+arm-none-eabi-size   U1_03.elf 
+arm-none-eabi-objdump -h -S  U1_03.elf  > "U1_03.list"
+   text	   data	    bss	    dec	    hex	filename
+   5448	    120	   1592	   7160	   1bf8	U1_03.elf
+Finished building: default.size.stdout
+ 
+Finished building: U1_03.list
+ 
+17:23:23 **** Incremental Build of configuration Debug for project U1_03 ****
+make -j8 all 
+arm-none-eabi-size   U1_03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5448	    120	   1592	   7160	   1bf8	U1_03.elf
+Finished building: default.size.stdout
+ 
+17:56:38 **** Incremental Build of configuration Debug for project U1_03 ****
+make -j8 all 
+arm-none-eabi-size   U1_03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5448	    120	   1592	   7160	   1bf8	U1_03.elf
+Finished building: default.size.stdout
+ 
+17:57:33 **** Incremental Build of configuration Debug for project U1_03 ****
+make -j8 all 
+arm-none-eabi-size   U1_03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5448	    120	   1592	   7160	   1bf8	U1_03.elf
+Finished building: default.size.stdout
+ 
+17:57:36 **** Incremental Build of configuration Debug for project U1_03 ****
+make -j8 all 
+arm-none-eabi-size   U1_03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5448	    120	   1592	   7160	   1bf8	U1_03.elf
+Finished building: default.size.stdout
+ 
+18:11:57 **** Incremental Build of configuration Debug for project U1_03 ****
+make -j8 all 
+arm-none-eabi-size   U1_03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5448	    120	   1592	   7160	   1bf8	U1_03.elf
+Finished building: default.size.stdout
+ 
+18:33:18 **** Incremental Build of configuration Debug for project U1_03 ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DNUCLEO_L053R8 -DSTM32 -DSTM32L0 -DSTM32L053R8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "U1_03.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\win10\Desktop\workspace2\U1_03\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U1_03.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U1_03.elf
+ 
+arm-none-eabi-size   U1_03.elf 
+arm-none-eabi-objdump -h -S  U1_03.elf  > "U1_03.list"
+   text	   data	    bss	    dec	    hex	filename
+   5452	    120	   1592	   7164	   1bfc	U1_03.elf
+Finished building: default.size.stdout
+ 
+Finished building: U1_03.list
+ 
+18:33:55 **** Incremental Build of configuration Debug for project U1_03 ****
+make -j8 all 
+arm-none-eabi-size   U1_03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5452	    120	   1592	   7164	   1bfc	U1_03.elf
+Finished building: default.size.stdout
+ 
+18:56:21 **** Incremental Build of configuration Debug for project U1_03 ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DNUCLEO_L053R8 -DSTM32 -DSTM32L0 -DSTM32L053R8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "U1_03.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\win10\Desktop\workspace2\U1_03\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U1_03.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U1_03.elf
+ 
+arm-none-eabi-size   U1_03.elf 
+arm-none-eabi-objdump -h -S  U1_03.elf  > "U1_03.list"
+   text	   data	    bss	    dec	    hex	filename
+   5416	    112	   1592	   7120	   1bd0	U1_03.elf
+Finished building: default.size.stdout
+ 
+Finished building: U1_03.list
+ 
+19:04:04 **** Incremental Build of configuration Debug for project U1_03 ****
+make -j8 all 
+arm-none-eabi-size   U1_03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5416	    112	   1592	   7120	   1bd0	U1_03.elf
+Finished building: default.size.stdout
+ 
+19:05:01 **** Incremental Build of configuration Debug for project U1_03 ****
+make -j8 all 
+arm-none-eabi-size   U1_03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5416	    112	   1592	   7120	   1bd0	U1_03.elf
+Finished building: default.size.stdout
+ 
+19:07:21 **** Incremental Build of configuration Debug for project U1_03 ****
+make -j8 all 
+arm-none-eabi-size   U1_03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5416	    112	   1592	   7120	   1bd0	U1_03.elf
+Finished building: default.size.stdout
+ 
+19:09:23 **** Incremental Build of configuration Debug for project U1_03 ****
+make -j8 all 
+arm-none-eabi-size   U1_03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5416	    112	   1592	   7120	   1bd0	U1_03.elf
 Finished building: default.size.stdout
  

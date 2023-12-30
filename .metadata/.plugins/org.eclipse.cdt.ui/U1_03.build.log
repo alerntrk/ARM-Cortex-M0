@@ -1,0 +1,10 @@
+19:09:23 **** Incremental Build of configuration Debug for project U1_03 ****
+make -j8 all 
+arm-none-eabi-size   U1_03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5416	    112	   1592	   7120	   1bd0	U1_03.elf
+Finished building: default.size.stdout
+ 
+
+19:09:23 Build Finished. 0 errors, 0 warnings. (took 154ms)
+

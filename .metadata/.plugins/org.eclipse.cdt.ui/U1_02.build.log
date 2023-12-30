@@ -1,0 +1,17 @@
+21:28:46 **** Incremental Build of configuration Debug for project U1_02 ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DNUCLEO_L053R8 -DSTM32 -DSTM32L0 -DSTM32L053R8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "U1_02.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\win10\Desktop\workspace2\U1_02\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="U1_02.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: U1_02.elf
+ 
+arm-none-eabi-size   U1_02.elf 
+arm-none-eabi-objdump -h -S  U1_02.elf  > "U1_02.list"
+   text	   data	    bss	    dec	    hex	filename
+   5540	    120	   1592	   7252	   1c54	U1_02.elf
+Finished building: default.size.stdout
+ 
+Finished building: U1_02.list
+ 
+
+21:28:47 Build Finished. 0 errors, 0 warnings. (took 688ms)
+
